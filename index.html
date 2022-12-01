@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $('#flip').click(function () {
+          $('#panel').slideToggle('slow');
+        });
+      });
+    </script>
+    <style>
+      #panel,
+      #flip {
+        padding: 5px;
+        text-align: center;
+        background-color: rgb(97, 163, 194);
+        border: solid 1px #168054;
+      }
+
+      #panel {
+        padding: 50px;
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="flip">Efek Slide</div>
+    <div id="panel">Efek slide adalah efek kemunculan sebuah elemen HTML dengan cara turun dari atas kebawah. Untuk membuat efek ini, jQuery menyediakan 2 buah method: slideUp() dan slideDown().</div>
+  </body>
+</html>
